@@ -1,0 +1,269 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - file: "index.html"
+        label: "Homepage Content"
+        name: "homepage_content"
+        fields:
+          - {
+              label: "Hero Title",
+              name: "hero_title",
+              widget: "string",
+              default: "Empowering Tanzanian Businesses",
+            }
+          - {
+              label: "Hero Subtitle",
+              name: "hero_subtitle",
+              widget: "text",
+              default: "Your trusted partner for HSE, Utilities, Hardware, and Construction Services",
+            }
+          - {
+              label: "Hero CTA Button Text",
+              name: "hero_cta_text",
+              widget: "string",
+              default: "Explore Our Services",
+            }
+          - {
+              label: "Services Section Title",
+              name: "services_title",
+              widget: "string",
+              default: "Our Key Services",
+            }
+          - {
+              label: "CTA Section Title",
+              name: "cta_title",
+              widget: "string",
+              default: "Ready to Start Your Project?",
+            }
+          - {
+              label: "CTA Section Text",
+              name: "cta_text",
+              widget: "text",
+              default: "Contact us today for a free consultation or to request a quote.",
+            }
+          - {
+              label: "CTA Button Text",
+              name: "cta_button_text",
+              widget: "string",
+              default: "Contact Us",
+            }
+          - {
+              label: "Testimonial Text",
+              name: "testimonial_text",
+              widget: "text",
+              default: "DukeOps provided exceptional service and expertise for our construction project. Highly recommended!",
+            }
+          - {
+              label: "Testimonial Author",
+              name: "testimonial_author",
+              widget: "string",
+              default: "Happy Client, Dar es Salaam",
+            }
+
+  - name: "about"
+    label: "About Us"
+    files:
+      - file: "about.html"
+        label: "About Page Content"
+        name: "about_content"
+        fields:
+          - {
+              label: "Page Title",
+              name: "about_title",
+              widget: "string",
+              default: "About DukeOps",
+            }
+          - {
+              label: "About Description",
+              name: "about_description",
+              widget: "text",
+              default: "DukeOps is a Tanzanian startup dedicated to providing top-tier business solutions...",
+            }
+          - label: "Company Values"
+            name: "about_values"
+            widget: "list"
+            default:
+              [
+                "Professionalism & Integrity",
+                "Client-Centered Solutions",
+                "Quality & Safety First",
+                "Continuous Improvement",
+              ]
+            field: { label: "Value", name: "value", widget: "string" }
+
+  - name: "services"
+    label: "Services"
+    files:
+      - file: "services.html"
+        label: "Services Page Content"
+        name: "services_content"
+        fields:
+          - {
+              label: "Page Title",
+              name: "services_main_title",
+              widget: "string",
+              default: "Our Services",
+            }
+          - label: "HSE Service"
+            name: "hse_service"
+            widget: "object"
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  default: "HSE Consultancy, Training & Audits",
+                }
+              - {
+                  label: "Description",
+                  name: "description",
+                  widget: "text",
+                  default: "We offer comprehensive Health, Safety, and Environment (HSE) consultancy...",
+                }
+          - label: "Utility Service"
+            name: "utility_service"
+            widget: "object"
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  default: "Utility Services",
+                }
+              - {
+                  label: "Description",
+                  name: "description",
+                  widget: "text",
+                  default: "From electrical and plumbing installations to maintenance...",
+                }
+          - label: "Hardware Service"
+            name: "hardware_service"
+            widget: "object"
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  default: "Hardware Supplies",
+                }
+              - {
+                  label: "Description",
+                  name: "description",
+                  widget: "text",
+                  default: "Browse our catalog for quality construction tools and materials...",
+                }
+          - label: "Construction Service"
+            name: "construction_service"
+            widget: "object"
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  default: "Construction Services",
+                }
+              - {
+                  label: "Description",
+                  name: "description",
+                  widget: "text",
+                  default: "We deliver residential and commercial construction projects...",
+                }
+
+  - name: "hardware"
+    label: "Hardware Catalog"
+    folder: "_hardware"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Product Name", name: "title", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Tools", "Materials", "Electrical", "Plumbing"],
+        }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Price Range",
+          name: "price_range",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Product Image",
+          name: "image",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Bootstrap Icon",
+          name: "icon",
+          widget: "string",
+          default: "bi-tools",
+          hint: "Bootstrap icon class (e.g., bi-hammer, bi-tools)",
+        }
+      - {
+          label: "Available",
+          name: "available",
+          widget: "boolean",
+          default: true,
+        }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "_data/settings.yml"
+        label: "General Settings"
+        name: "general_settings"
+        fields:
+          - {
+              label: "Site Title",
+              name: "site_title",
+              widget: "string",
+              default: "DukeOps",
+            }
+          - {
+              label: "Site Description",
+              name: "site_description",
+              widget: "text",
+              default: "Professional business solutions in Tanzania",
+            }
+          - {
+              label: "WhatsApp Number",
+              name: "whatsapp_number",
+              widget: "string",
+              default: "255123456789",
+              hint: "Include country code without +",
+            }
+          - {
+              label: "Email Address",
+              name: "email",
+              widget: "string",
+              default: "info@dukeops.co.tz",
+            }
+          - {
+              label: "Physical Address",
+              name: "address",
+              widget: "text",
+              default: "Dar es Salaam, Tanzania",
+            }
+          - {
+              label: "Business Hours",
+              name: "business_hours",
+              widget: "string",
+              default: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM",
+            }
+          - {
+              label: "Footer Copyright Text",
+              name: "footer_text",
+              widget: "string",
+              default: "© 2024 DukeOps. All rights reserved.",
+            }

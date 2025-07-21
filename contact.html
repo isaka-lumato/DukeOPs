@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - DukeOps | Get in Touch for Professional Business Solutions in Tanzania</title>
+  <meta name="description" content="Contact DukeOps for professional HSE, construction, utility, and hardware services in Tanzania. Get free consultation and personalized quotes.">
+  <meta name="keywords" content="contact DukeOps, Tanzania business contact, HSE consultation, construction quotes, utility services contact">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Contact DukeOps - Professional Business Solutions Tanzania">
+  <meta property="og:description" content="Get in touch for professional HSE, construction, utility, and hardware services across Tanzania.">
+  <meta property="og:image" content="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png">
+  <meta property="og:url" content="https://dukeops.co.tz/contact.html">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <!-- Navbar -->
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" id="navbar-brand" href="index.html">DukeOps</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-about" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-services" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-hardware" href="hardware.html">Hardware Catalog</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modern Contact Section -->
+  <section id="contact-section" style="min-height: 90vh;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center mb-5">
+          <h1 id="contact-title" class="text-gradient">Get In Touch</h1>
+          <p class="lead text-muted">Ready to start your project? Contact us for a free consultation and personalized quote.</p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="glass-card p-5 glow-on-hover">
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <input type="hidden" name="_subject" value="New inquiry from DukeOps website">
+              <input type="hidden" name="_next" value="contact.html?success=true">
+              
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="contact-name" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" id="contact-name" name="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="contact-email" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" id="contact-email" name="email" required>
+                </div>
+              </div>
+              
+              <div class="row g-3 mt-2">
+                <div class="col-md-6">
+                  <label for="contact-phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="+255...">
+                </div>
+                <div class="col-md-6">
+                  <label for="contact-service" class="form-label">Service Needed</label>
+                  <select class="form-select" id="contact-service" name="service">
+                    <option value="">Select a service...</option>
+                    <option value="HSE Consultancy">HSE Consultancy</option>
+                    <option value="Utility Services">Utility Services</option>
+                    <option value="Hardware Supplies">Hardware Supplies</option>
+                    <option value="Construction Services">Construction Services</option>
+                    <option value="Multiple Services">Multiple Services</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="mt-4">
+                <label for="contact-message" class="form-label">Project Details *</label>
+                <textarea class="form-control" id="contact-message" name="message" rows="5" placeholder="Tell us about your project requirements, timeline, and any specific needs..." required></textarea>
+              </div>
+              
+              <!-- Success/Error Messages -->
+              <div class="mt-3 d-none" id="form-success">
+                <div class="alert alert-success" id="form-success-alert">
+                  <i class="bi bi-check-circle me-2"></i>Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.
+                </div>
+              </div>
+              <div class="mt-3 d-none" id="form-failure">
+                <div class="alert alert-danger" id="form-failure-alert">
+                  <i class="bi bi-exclamation-triangle me-2"></i>Oops! Something went wrong. Please try again or contact us directly via WhatsApp.
+                </div>
+              </div>
+              
+              <div class="mt-4 d-grid">
+                <button type="submit" class="btn btn-primary btn-lg" id="form-submit-button">
+                  <i class="bi bi-send me-2"></i>Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Info Cards -->
+      <div class="row mt-5 g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card text-center p-4 h-100 glow-on-hover">
+            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 float-animation" style="width: 60px; height: 60px;">
+              <i class="bi bi-whatsapp text-white" style="font-size: 1.5rem;"></i>
+            </div>
+            <h5>WhatsApp</h5>
+            <p class="text-muted mb-3">Quick response via WhatsApp</p>
+            <a href="https://wa.me/255123456789" class="btn btn-outline-primary" target="_blank">Chat Now</a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card text-center p-4 h-100 glow-on-hover">
+            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 float-animation" style="width: 60px; height: 60px; animation-delay: 0.5s;">
+              <i class="bi bi-envelope text-white" style="font-size: 1.5rem;"></i>
+            </div>
+            <h5>Email</h5>
+            <p class="text-muted mb-3">Send us an email</p>
+            <a href="mailto:info@dukeops.co.tz" class="btn btn-outline-primary">Send Email</a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-card text-center p-4 h-100 glow-on-hover">
+            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 float-animation" style="width: 60px; height: 60px; animation-delay: 1s;">
+              <i class="bi bi-geo-alt text-white" style="font-size: 1.5rem;"></i>
+            </div>
+            <h5>Location</h5>
+            <p class="text-muted mb-3">Dar es Salaam, Tanzania</p>
+            <button class="btn btn-outline-primary" disabled>Visit Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Comprehensive Footer -->
+  <footer id="main-footer" class="bg-dark text-white">
+    <div class="container">
+      <!-- Main Footer Content -->
+      <div class="row py-5">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="mb-4">
+            <h3 class="text-gradient mb-3">DukeOps</h3>
+            <p class="text-light mb-4">Empowering Tanzanian businesses with professional HSE, utilities, hardware, and construction services. Your trusted partner for quality and excellence.</p>
+            <div class="d-flex gap-3">
+              <a href="https://wa.me/255123456789" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px;" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="mailto:info@dukeops.co.tz" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px;">
+                <i class="bi bi-envelope"></i>
+              </a>
+              <a href="tel:+255123456789" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px;">
+                <i class="bi bi-telephone"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px;">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3">Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="services.html#hse" class="text-light text-decoration-none">HSE Consultancy</a></li>
+            <li class="mb-2"><a href="services.html#utility" class="text-light text-decoration-none">Utility Services</a></li>
+            <li class="mb-2"><a href="hardware.html" class="text-light text-decoration-none">Hardware Supplies</a></li>
+            <li class="mb-2"><a href="services.html#construction" class="text-light text-decoration-none">Construction</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-white mb-3">Company</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+            <li class="mb-2"><a href="index.html#gallery-section" class="text-light text-decoration-none">Projects</a></li>
+            <li class="mb-2"><a href="index.html#testimonials-section" class="text-light text-decoration-none">Testimonials</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4">
+          <h5 class="text-white mb-3">Contact Information</h5>
+          <div class="mb-3">
+            <div class="d-flex align-items-start mb-2">
+              <i class="bi bi-geo-alt text-primary me-2 mt-1"></i>
+              <div>
+                <strong>Head Office:</strong><br>
+                <span class="text-light">Dar es Salaam, Tanzania</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-telephone text-primary me-2"></i>
+              <span class="text-light">+255 123 456 789</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-envelope text-primary me-2"></i>
+              <span class="text-light">info@dukeops.co.tz</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock text-primary me-2"></i>
+              <span class="text-light">Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</span>
+            </div>
+          </div>
+          
+          <!-- Quick Contact Form -->
+          <div class="glass-card p-3" style="background: rgba(255, 255, 255, 0.1);">
+            <h6 class="text-white mb-2">Quick Inquiry</h6>
+            <form id="footer-contact-form">
+              <div class="mb-2">
+                <input type="email" class="form-control form-control-sm" placeholder="Your email" required>
+              </div>
+              <div class="mb-2">
+                <textarea class="form-control form-control-sm" rows="2" placeholder="Your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="border-top border-secondary pt-4 pb-3">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0 text-light">&copy; 2024 DukeOps. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
+              <a href="#" class="text-light text-decoration-none small">Privacy Policy</a>
+              <a href="#" class="text-light text-decoration-none small">Terms of Service</a>
+              <a href="#" class="text-light text-decoration-none small">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/255123456789?text=Hi%2C%20I%27d%20like%20to%20get%20in%20touch%20with%20DukeOps" class="whatsapp-float" id="whatsapp-float-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html> 
