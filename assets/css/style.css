@@ -2556,3 +2556,131 @@ section {
     margin-bottom: 2rem !important;
   }
 }
+/* SOCIAL ICONS STYLING */
+.social-icons-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.social-icon:hover::before {
+  transform: scale(1);
+}
+
+.social-icon i {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon.whatsapp {
+  background: #25d366;
+}
+
+.social-icon.whatsapp:hover::before {
+  background: #128c7e;
+}
+
+.social-icon.email {
+  background: #3b82f6;
+}
+
+.social-icon.email:hover::before {
+  background: #2563eb;
+}
+
+.social-icon.phone {
+  background: #f59e0b;
+}
+
+.social-icon.phone:hover::before {
+  background: #d97706;
+}
+
+.social-icon.linkedin {
+  background: #0077b5;
+}
+
+.social-icon.linkedin:hover::before {
+  background: #005885;
+}
+
+.social-icon.facebook {
+  background: #1877f2;
+}
+
+.social-icon.facebook:hover::before {
+  background: #0d65d9;
+}
+
+.social-icon.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.social-icon.instagram:hover::before {
+  background: linear-gradient(
+    45deg,
+    #bc1888 0%,
+    #cc2366 25%,
+    #dc2743 50%,
+    #e6683c 75%,
+    #f09433 100%
+  );
+}
+
+/* Make social icons consistent on mobile */
+@media (max-width: 767.98px) {
+  .social-icons-wrapper {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-icon i {
+    font-size: 1.3rem;
+  }
+}
