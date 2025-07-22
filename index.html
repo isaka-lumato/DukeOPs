@@ -1,477 +1,1005 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DukeOps - Empowering Tanzanian Businesses | Professional HSE, Construction & Utility Services</title>
-  <meta name="description" content="DukeOps provides professional HSE consultancy, utility services, hardware supplies, and construction services across Tanzania. Your trusted partner for business excellence.">
-  <meta name="keywords" content="Tanzania construction, HSE consultancy, utility services, hardware supplies, Dar es Salaam, business services">
-  <meta name="author" content="DukeOps">
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="DukeOps - Empowering Tanzanian Businesses">
-  <meta property="og:description" content="Professional HSE, Construction & Utility Services in Tanzania">
-  <meta property="og:image" content="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png">
-  <meta property="og:url" content="https://dukeops.co.tz">
-  <meta property="og:type" content="website">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-</head>
-<body>
-  <!-- Loading Screen -->
-  <div class="loading-screen" id="loading-screen">
-    <div class="text-center">
-      <div class="loader mb-3"></div>
-      <h5 class="text-gradient">Loading DukeOps...</h5>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      DukeOps - Empowering Tanzanian Businesses | Professional HSE, Construction
+      & Utility Services
+    </title>
+    <meta
+      name="description"
+      content="DukeOps provides professional HSE consultancy, utility services, hardware supplies, and construction services across Tanzania. Your trusted partner for business excellence."
+    />
+    <meta
+      name="keywords"
+      content="Tanzania construction, HSE consultancy, utility services, hardware supplies, Dar es Salaam, business services"
+    />
+    <meta name="author" content="DukeOps" />
 
-  <!-- Scroll Progress Indicator -->
-  <div class="scroll-progress" id="scroll-progress"></div>
-  <!-- Navbar -->
-  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" id="navbar-brand" href="index.html">DukeOps</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" id="nav-home" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" id="nav-about" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" id="nav-services" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" id="nav-hardware" href="hardware.html">Hardware Catalog</a></li>
-          <li class="nav-item"><a class="nav-link" id="nav-contact" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="DukeOps - Empowering Tanzanian Businesses"
+    />
+    <meta
+      property="og:description"
+      content="Professional HSE, Construction & Utility Services in Tanzania"
+    />
+    <meta
+      property="og:image"
+      content="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png"
+    />
+    <meta property="og:url" content="https://dukeops.co.tz" />
+    <meta property="og:type" content="website" />
 
-  <!-- Modern Hero Section -->
-  <section id="hero-section" class="text-center text-white">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <h1 id="hero-title" class="mb-4 fade-in">Empowering Tanzanian Businesses</h1>
-          <p id="hero-subtitle" class="mb-5 fade-in">Your trusted partner for HSE, Utilities, Hardware, and Construction Services</p>
-          <a href="#services-section" id="hero-cta" class="fade-in">Explore Our Services</a>
-        </div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+      <div class="text-center">
+        <div class="loader mb-3"></div>
+        <h5 class="text-gradient">Loading DukeOps...</h5>
       </div>
     </div>
-  </section>
 
-  <!-- Statistics Section -->
-  <section id="stats-section" class="py-5 bg-white">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-6 col-md-3">
-          <div class="text-center" data-aos="fade-up">
-            <div class="bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-              <i class="bi bi-building text-white" style="font-size: 2rem;"></i>
-            </div>
-            <h3 class="text-gradient mb-1" id="projects-completed">150+</h3>
-            <p class="text-muted mb-0">Projects Completed</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-              <i class="bi bi-people text-white" style="font-size: 2rem;"></i>
-            </div>
-            <h3 class="text-gradient mb-1" id="happy-clients">200+</h3>
-            <p class="text-muted mb-0">Happy Clients</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-              <i class="bi bi-calendar text-white" style="font-size: 2rem;"></i>
-            </div>
-            <h3 class="text-gradient mb-1" id="years-experience">5+</h3>
-            <p class="text-muted mb-0">Years Experience</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-            <div class="bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-              <i class="bi bi-award text-white" style="font-size: 2rem;"></i>
-            </div>
-            <h3 class="text-gradient mb-1" id="certifications">15+</h3>
-            <p class="text-muted mb-0">Certifications</p>
-          </div>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          id="navbar-brand"
+          href="index.html"
+        >
+          <img
+            src="assets/images/logo.jpg"
+            alt="DukeOps Logo"
+            class="navbar-logo"
+          />
+          <span>DukeOps</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-0">
+            <li class="nav-item">
+              <a class="nav-link" id="nav-home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-about" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-services" href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-hardware" href="hardware.html"
+                >Hardware Catalog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-contact" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Modern Services Section -->
-  <section id="services-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center mb-5">
-          <h2 id="services-title" class="text-gradient">Our Key Services</h2>
-          <p class="lead text-muted">Comprehensive business solutions tailored for the Tanzanian market</p>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="glass-card h-100" id="hse-service-card" data-aos="fade-up">
-            <div class="card-body text-center p-4">
-              <div class="mb-3">
-                <i class="bi bi-shield-check text-primary" style="font-size: 3rem;"></i>
-              </div>
-              <h5 class="card-title">HSE Consultancy</h5>
-              <p class="card-text">Professional consultancy, training, audits, and compliance for Health, Safety, and Environment standards.</p>
-              <a href="services.html#hse" class="btn btn-outline-primary" id="hse-learn-more">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="glass-card h-100" id="utility-service-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-body text-center p-4">
-              <div class="mb-3">
-                <i class="bi bi-lightning text-primary" style="font-size: 3rem;"></i>
-              </div>
-              <h5 class="card-title">Utility Services</h5>
-              <p class="card-text">Complete electrical & plumbing solutions, maintenance, decorative lighting, and wastewater management.</p>
-              <a href="services.html#utility" class="btn btn-outline-primary" id="utility-learn-more">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="glass-card h-100" id="hardware-service-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-body text-center p-4">
-              <div class="mb-3">
-                <i class="bi bi-tools text-primary" style="font-size: 3rem;"></i>
-              </div>
-              <h5 class="card-title">Hardware Supplies</h5>
-              <p class="card-text">Quality construction tools & materials catalog. Easy ordering through WhatsApp for your convenience.</p>
-              <a href="hardware.html" class="btn btn-outline-primary" id="hardware-learn-more">View Catalog</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="glass-card h-100" id="construction-service-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-body text-center p-4">
-              <div class="mb-3">
-                <i class="bi bi-building text-primary" style="font-size: 3rem;"></i>
-              </div>
-              <h5 class="card-title">Construction Services</h5>
-              <p class="card-text">Professional residential and commercial construction projects with focus on quality and reliability.</p>
-              <a href="services.html#construction" class="btn btn-outline-primary" id="construction-learn-more">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Premium Modern Hero Section -->
+    <section id="hero-section" class="text-center text-white">
+      <!-- Clean Professional Design - No Particles Needed -->
 
-  <!-- Why Choose Us Section -->
-  <section id="why-choose-us" class="py-5 bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center mb-5">
-          <h2 class="text-gradient">Why Choose DukeOps?</h2>
-          <p class="lead text-muted">We stand out in the Tanzanian market through our commitment to excellence and innovation</p>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="d-flex align-items-start mb-4" data-aos="fade-right">
-            <div class="bg-gradient rounded-circle d-flex align-items-center justify-content-center me-4 flex-shrink-0 float-animation" style="width: 70px; height: 70px;">
-              <i class="bi bi-shield-check text-white" style="font-size: 1.75rem;"></i>
-            </div>
-            <div>
-              <h5 class="mb-2">Certified Excellence</h5>
-              <p class="text-muted mb-0">All our services meet international standards with proper certifications and compliance. We maintain the highest quality benchmarks in every project.</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-start mb-4" data-aos="fade-right" data-aos-delay="100">
-            <div class="bg-gradient rounded-circle d-flex align-items-center justify-content-center me-4 flex-shrink-0 float-animation" style="width: 70px; height: 70px; animation-delay: 0.5s;">
-              <i class="bi bi-clock text-white" style="font-size: 1.75rem;"></i>
-            </div>
-            <div>
-              <h5 class="mb-2">24/7 Support</h5>
-              <p class="text-muted mb-0">Round-the-clock customer support and emergency services. We're always available when you need us most, ensuring project continuity.</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-start" data-aos="fade-right" data-aos-delay="200">
-            <div class="bg-gradient rounded-circle d-flex align-items-center justify-content-center me-4 flex-shrink-0 float-animation" style="width: 70px; height: 70px; animation-delay: 1s;">
-              <i class="bi bi-geo-alt text-white" style="font-size: 1.75rem;"></i>
-            </div>
-            <div>
-              <h5 class="mb-2">Local Expertise</h5>
-              <p class="text-muted mb-0">Deep understanding of Tanzanian regulations, climate, and business culture. We provide solutions tailored to local needs and conditions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="glass-card p-4 h-100 glow-on-hover" data-aos="fade-left">
-            <div class="text-center mb-4">
-              <img src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png" class="img-fluid rounded" alt="DukeOps Team" style="max-height: 300px; object-fit: cover;">
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
             <div class="text-center">
-              <h4 class="text-gradient mb-3">Our Commitment</h4>
-              <p class="text-muted mb-4">"At DukeOps, we don't just deliver services – we build lasting partnerships. Every project is an opportunity to contribute to Tanzania's growth and development."</p>
-              <div class="d-flex justify-content-center gap-2">
-                <span class="badge bg-primary">ISO Certified</span>
-                <span class="badge bg-success">5+ Years</span>
-                <span class="badge bg-warning">200+ Projects</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+              <!-- Clean Hero Title -->
+              <h1 class="hero-title mb-4 fade-in">
+                <span class="hero-title-main">Empowering Tanzanian</span>
+                <span class="hero-title-highlight">Businesses</span>
+                <!-- <span class="hero-title-sub">to Build the Future</span> -->
+              </h1>
 
-  <!-- Modern CTA Section -->
-  <section id="cta-section" class="bg-gradient text-white text-center" data-aos="zoom-in">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <h2 id="cta-title" class="mb-4">Ready to Start Your Project?</h2>
-          <p id="cta-text" class="lead mb-4">Contact us today for a free consultation or to request a personalized quote for your business needs.</p>
-          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-            <a href="contact.html" id="cta-contact-btn" class="btn btn-light btn-lg">Get Free Consultation</a>
-            <a href="https://wa.me/255123456789?text=Hi%2C%20I%27d%20like%20to%20request%20a%20quote" class="btn btn-outline-light btn-lg" target="_blank">Request Quote</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+              <!-- Clean Hero Description -->
+              <p class="hero-description mb-4 fade-in">
+                Professional HSE consultancy, construction, utility services,
+                and hardware supplies across Tanzania.
+              </p>
 
-  <!-- Project Gallery Section -->
-  <section id="gallery-section" class="py-5 bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center mb-5">
-          <h2 class="text-gradient">Our Recent Projects</h2>
-          <p class="lead text-muted">Showcasing excellence in construction and business solutions across Tanzania</p>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="glass-card overflow-hidden" data-aos="fade-up">
-            <img src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png" class="img-fluid" alt="Commercial Construction Project" style="height: 250px; width: 100%; object-fit: cover;">
-            <div class="p-4">
-              <h5 class="mb-2">Commercial Building - Dar es Salaam</h5>
-              <p class="text-muted mb-3">Complete construction and HSE compliance for a 5-story office complex.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="badge bg-success">Completed</span>
-                <small class="text-muted">2024</small>
+              <!-- Interactive Service Buttons -->
+              <div class="hero-services mb-4 fade-in">
+                <a href="contact.html?service=hse" class="service-btn">
+                  <i class="bi bi-shield-check"></i>
+                  <span>HSE Consultancy</span>
+                </a>
+                <a href="contact.html?service=construction" class="service-btn">
+                  <i class="bi bi-building"></i>
+                  <span>Construction</span>
+                </a>
+                <a href="contact.html?service=utility" class="service-btn">
+                  <i class="bi bi-lightning-charge"></i>
+                  <span>Utility Services</span>
+                </a>
+                <a href="contact.html?service=hardware" class="service-btn">
+                  <i class="bi bi-tools"></i>
+                  <span>Hardware Supplies</span>
+                </a>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png" class="img-fluid" alt="Electrical Installation Project" style="height: 250px; width: 100%; object-fit: cover;">
-            <div class="p-4">
-              <h5 class="mb-2">Industrial Electrical System</h5>
-              <p class="text-muted mb-3">Complete electrical installation and maintenance for manufacturing facility.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="badge bg-success">Completed</span>
-                <small class="text-muted">2024</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png" class="img-fluid" alt="Residential Construction" style="height: 250px; width: 100%; object-fit: cover;">
-            <div class="p-4">
-              <h5 class="mb-2">Luxury Residential Complex</h5>
-              <p class="text-muted mb-3">Modern residential development with sustainable construction practices.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="badge bg-warning">In Progress</span>
-                <small class="text-muted">2024</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Enhanced Testimonials Section -->
-  <section id="testimonials-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center mb-5">
-          <h2 id="testimonials-title" class="text-gradient">What Our Clients Say</h2>
-          <p class="lead text-muted">Trusted by businesses across Tanzania</p>
+              <!-- Clean CTA Buttons -->
+              <div class="hero-cta-group mb-5 fade-in">
+                <a href="services.html" class="btn btn-primary btn-lg me-3">
+                  <i class="bi bi-arrow-right me-2"></i>
+                  Our Services
+                </a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">
+                  <i class="bi bi-telephone me-2"></i>
+                  Get Quote
+                </a>
+              </div>
+
+              <!-- Clean Stats -->
+              <div class="hero-stats fade-in">
+                <div class="stat-item">
+                  <div class="stat-number">150+</div>
+                  <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">200+</div>
+                  <div class="stat-label">Clients</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">5+</div>
+                  <div class="stat-label">Years</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="glass-card h-100" id="testimonial-card-1" data-aos="fade-up">
-            <div class="p-4">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png" class="rounded-circle me-3" alt="Client" style="width: 60px; height: 60px; object-fit: cover;">
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats-section" class="py-5 bg-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="text-center" data-aos="fade-up">
+              <div
+                class="bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i
+                  class="bi bi-building text-white"
+                  style="font-size: 2rem"
+                ></i>
+              </div>
+              <h3 class="text-gradient mb-1" id="projects-completed">150+</h3>
+              <p class="text-muted mb-0">Projects Completed</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+              <div
+                class="bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i class="bi bi-people text-white" style="font-size: 2rem"></i>
+              </div>
+              <h3 class="text-gradient mb-1" id="happy-clients">200+</h3>
+              <p class="text-muted mb-0">Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i
+                  class="bi bi-calendar text-white"
+                  style="font-size: 2rem"
+                ></i>
+              </div>
+              <h3 class="text-gradient mb-1" id="years-experience">5+</h3>
+              <p class="text-muted mb-0">Years Experience</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+              <div
+                class="bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                style="width: 80px; height: 80px"
+              >
+                <i class="bi bi-award text-white" style="font-size: 2rem"></i>
+              </div>
+              <h3 class="text-gradient mb-1" id="certifications">15+</h3>
+              <p class="text-muted mb-0">Certifications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modern Services Section -->
+    <section id="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <h2 id="services-title" class="text-gradient fade-in">
+              Our Key Services
+            </h2>
+            <p class="lead text-muted fade-in animate-delay-1">
+              Comprehensive business solutions tailored for the Tanzanian market
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="glass-card h-100 slide-in-left animate-delay-1"
+              id="hse-service-card"
+            >
+              <div class="card-body text-center p-4">
+                <div class="mb-3 scale-in animate-delay-2">
+                  <i
+                    class="bi bi-shield-check text-primary pulse-animation"
+                    style="font-size: 3rem"
+                  ></i>
+                </div>
+                <h5 class="card-title fade-in animate-delay-3">
+                  HSE Consultancy
+                </h5>
+                <p class="card-text fade-in animate-delay-4">
+                  Professional consultancy, training, audits, and compliance for
+                  Health, Safety, and Environment standards.
+                </p>
+                <a
+                  href="services.html#hse"
+                  class="btn btn-outline-primary bounce-in animate-delay-5"
+                  id="hse-learn-more"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="glass-card h-100 slide-in-right animate-delay-1"
+              id="utility-service-card"
+            >
+              <div class="card-body text-center p-4">
+                <div class="mb-3 scale-in animate-delay-2">
+                  <i
+                    class="bi bi-lightning text-primary pulse-animation"
+                    style="font-size: 3rem; animation-delay: 0.5s"
+                  ></i>
+                </div>
+                <h5 class="card-title fade-in animate-delay-3">
+                  Utility Services
+                </h5>
+                <p class="card-text fade-in animate-delay-4">
+                  Complete electrical & plumbing solutions, maintenance,
+                  decorative lighting, and wastewater management.
+                </p>
+                <a
+                  href="services.html#utility"
+                  class="btn btn-outline-primary bounce-in animate-delay-5"
+                  id="utility-learn-more"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="glass-card h-100 slide-in-left animate-delay-2"
+              id="hardware-service-card"
+            >
+              <div class="card-body text-center p-4">
+                <div class="mb-3 scale-in animate-delay-3">
+                  <i
+                    class="bi bi-tools text-primary pulse-animation"
+                    style="font-size: 3rem; animation-delay: 1s"
+                  ></i>
+                </div>
+                <h5 class="card-title fade-in animate-delay-4">
+                  Hardware Supplies
+                </h5>
+                <p class="card-text fade-in animate-delay-5">
+                  Quality construction tools & materials catalog. Easy ordering
+                  through WhatsApp for your convenience.
+                </p>
+                <a
+                  href="hardware.html"
+                  class="btn btn-outline-primary bounce-in animate-delay-6"
+                  id="hardware-learn-more"
+                  >View Catalog</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="glass-card h-100 slide-in-right animate-delay-2"
+              id="construction-service-card"
+            >
+              <div class="card-body text-center p-4">
+                <div class="mb-3 scale-in animate-delay-3">
+                  <i
+                    class="bi bi-building text-primary pulse-animation"
+                    style="font-size: 3rem; animation-delay: 1.5s"
+                  ></i>
+                </div>
+                <h5 class="card-title fade-in animate-delay-4">
+                  Construction Services
+                </h5>
+                <p class="card-text fade-in animate-delay-5">
+                  Professional residential and commercial construction projects
+                  with focus on quality and reliability.
+                </p>
+                <a
+                  href="services.html#construction"
+                  class="btn btn-outline-primary bounce-in animate-delay-6"
+                  id="construction-learn-more"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modern Why Choose Us Section -->
+    <section id="why-choose-us" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <h2 class="section-title mb-3">Why Choose DukeOps?</h2>
+            <p class="section-subtitle">
+              We stand out in the Tanzanian market through our commitment to
+              excellence and innovation
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <!-- Feature Cards -->
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card text-center" data-aos="fade-up">
+              <div class="feature-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h5 class="feature-title">Certified Excellence</h5>
+              <p class="feature-text">
+                International standards with proper certifications and
+                compliance
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="feature-card text-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="feature-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <h5 class="feature-title">24/7 Support</h5>
+              <p class="feature-text">
+                Round-the-clock customer support and emergency services
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="feature-card text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="feature-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <h5 class="feature-title">Local Expertise</h5>
+              <p class="feature-text">
+                Deep understanding of Tanzanian regulations and business culture
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="feature-card text-center"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="feature-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <h5 class="feature-title">Proven Track Record</h5>
+              <p class="feature-text">
+                200+ successful projects across Tanzania with satisfied clients
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="row text-center">
+          <div class="col-md-3 col-6">
+            <div class="stat-card" data-aos="zoom-in">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="stat-number">200+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modern CTA Section -->
+    <section
+      id="cta-section"
+      class="bg-gradient text-white text-center"
+      data-aos="zoom-in"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 id="cta-title" class="mb-4">Ready to Start Your Project?</h2>
+            <p id="cta-text" class="lead mb-4">
+              Contact us today for a free consultation or to request a
+              personalized quote for your business needs.
+            </p>
+            <div
+              class="d-flex flex-column flex-sm-row gap-3 justify-content-center"
+            >
+              <a
+                href="contact.html"
+                id="cta-contact-btn"
+                class="btn btn-light btn-lg"
+                >Get Free Consultation</a
+              >
+              <a
+                href="https://wa.me/255123456789?text=Hi%2C%20I%27d%20like%20to%20request%20a%20quote"
+                class="btn btn-outline-light btn-lg"
+                target="_blank"
+                >Request Quote</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="gallery-section" class="py-5 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <h2 class="text-gradient">Our Recent Projects</h2>
+            <p class="lead text-muted">
+              Showcasing excellence in construction and business solutions
+              across Tanzania
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-card overflow-hidden" data-aos="fade-up">
+              <img
+                src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png"
+                class="img-fluid"
+                alt="Commercial Construction Project"
+                style="height: 250px; width: 100%; object-fit: cover"
+              />
+              <div class="p-4">
+                <h5 class="mb-2">Commercial Building - Dar es Salaam</h5>
+                <p class="text-muted mb-3">
+                  Complete construction and HSE compliance for a 5-story office
+                  complex.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-success">Completed</span>
+                  <small class="text-muted">2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="glass-card overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png"
+                class="img-fluid"
+                alt="Electrical Installation Project"
+                style="height: 250px; width: 100%; object-fit: cover"
+              />
+              <div class="p-4">
+                <h5 class="mb-2">Industrial Electrical System</h5>
+                <p class="text-muted mb-3">
+                  Complete electrical installation and maintenance for
+                  manufacturing facility.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-success">Completed</span>
+                  <small class="text-muted">2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="glass-card overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img
+                src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png"
+                class="img-fluid"
+                alt="Residential Construction"
+                style="height: 250px; width: 100%; object-fit: cover"
+              />
+              <div class="p-4">
+                <h5 class="mb-2">Luxury Residential Complex</h5>
+                <p class="text-muted mb-3">
+                  Modern residential development with sustainable construction
+                  practices.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-warning">In Progress</span>
+                  <small class="text-muted">2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Testimonials Section -->
+    <section id="testimonials-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <h2 id="testimonials-title" class="text-gradient">
+              What Our Clients Say
+            </h2>
+            <p class="lead text-muted">Trusted by businesses across Tanzania</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div
+              class="glass-card h-100"
+              id="testimonial-card-1"
+              data-aos="fade-up"
+            >
+              <div class="p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <img
+                    src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png"
+                    class="rounded-circle me-3"
+                    alt="Client"
+                    style="width: 60px; height: 60px; object-fit: cover"
+                  />
+                  <div>
+                    <h6 class="mb-0">Sarah Mwangi</h6>
+                    <small class="text-muted"
+                      >Construction Manager, Dar es Salaam</small
+                    >
+                  </div>
+                </div>
+                <blockquote class="blockquote mb-0">
+                  <p class="mb-3">
+                    "DukeOps provided exceptional service and expertise for our
+                    construction project. Their professional approach and
+                    attention to detail exceeded our expectations. Highly
+                    recommended!"
+                  </p>
+                  <div class="d-flex">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="glass-card h-100"
+              id="testimonial-card-2"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <img
+                    src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png"
+                    class="rounded-circle me-3"
+                    alt="Client"
+                    style="width: 60px; height: 60px; object-fit: cover"
+                  />
+                  <div>
+                    <h6 class="mb-0">James Kimani</h6>
+                    <small class="text-muted">Factory Owner, Arusha</small>
+                  </div>
+                </div>
+                <blockquote class="blockquote mb-0">
+                  <p class="mb-3">
+                    "Their HSE training program transformed our workplace safety
+                    culture. The team is knowledgeable, professional, and truly
+                    cares about client success. Outstanding service!"
+                  </p>
+                  <div class="d-flex">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modern Comprehensive Footer -->
+    <footer id="main-footer" class="bg-dark text-white">
+      <div class="container">
+        <!-- Main Footer Content -->
+        <div class="row py-5">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="mb-4">
+              <h3 class="text-gradient mb-3">DukeOps</h3>
+              <p class="text-light mb-4">
+                Empowering Tanzanian businesses with professional HSE,
+                utilities, hardware, and construction services. Your trusted
+                partner for quality and excellence.
+              </p>
+              <div class="d-flex gap-3">
+                <a
+                  href="https://wa.me/255123456789"
+                  class="btn btn-outline-light btn-sm rounded-circle"
+                  style="width: 40px; height: 40px"
+                  target="_blank"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a
+                  href="mailto:info@dukeops.co.tz"
+                  class="btn btn-outline-light btn-sm rounded-circle"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="bi bi-envelope"></i>
+                </a>
+                <a
+                  href="tel:+255123456789"
+                  class="btn btn-outline-light btn-sm rounded-circle"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="bi bi-telephone"></i>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-outline-light btn-sm rounded-circle"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-white mb-3">Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="services.html#hse"
+                  class="text-light text-decoration-none"
+                  >HSE Consultancy</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="services.html#utility"
+                  class="text-light text-decoration-none"
+                  >Utility Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="hardware.html" class="text-light text-decoration-none"
+                  >Hardware Supplies</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="services.html#construction"
+                  class="text-light text-decoration-none"
+                  >Construction</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-white mb-3">Company</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="about.html" class="text-light text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="contact.html" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#gallery-section"
+                  class="text-light text-decoration-none"
+                  >Projects</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#testimonials-section"
+                  class="text-light text-decoration-none"
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h5 class="text-white mb-3">Contact Information</h5>
+            <div class="mb-3">
+              <div class="d-flex align-items-start mb-2">
+                <i class="bi bi-geo-alt text-primary me-2 mt-1"></i>
                 <div>
-                  <h6 class="mb-0">Sarah Mwangi</h6>
-                  <small class="text-muted">Construction Manager, Dar es Salaam</small>
+                  <strong>Head Office:</strong><br />
+                  <span class="text-light">Dar es Salaam, Tanzania</span>
                 </div>
               </div>
-              <blockquote class="blockquote mb-0">
-                <p class="mb-3">"DukeOps provided exceptional service and expertise for our construction project. Their professional approach and attention to detail exceeded our expectations. Highly recommended!"</p>
-                <div class="d-flex">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <span class="text-light">+255 123 456 789</span>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-envelope text-primary me-2"></i>
+                <span class="text-light">info@dukeops.co.tz</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-clock text-primary me-2"></i>
+                <span class="text-light">Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</span>
+              </div>
+            </div>
+
+            <!-- Quick Contact Form -->
+            <div
+              class="glass-card p-3"
+              style="background: rgba(255, 255, 255, 0.1)"
+            >
+              <h6 class="text-white mb-2">Quick Inquiry</h6>
+              <form id="footer-contact-form">
+                <div class="mb-2">
+                  <input
+                    type="email"
+                    class="form-control form-control-sm"
+                    placeholder="Your email"
+                    required
+                  />
                 </div>
-              </blockquote>
+                <div class="mb-2">
+                  <textarea
+                    class="form-control form-control-sm"
+                    rows="2"
+                    placeholder="Your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm w-100">
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="glass-card h-100" id="testimonial-card-2" data-aos="fade-up" data-aos-delay="100">
-            <div class="p-4">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png" class="rounded-circle me-3" alt="Client" style="width: 60px; height: 60px; object-fit: cover;">
-                <div>
-                  <h6 class="mb-0">James Kimani</h6>
-                  <small class="text-muted">Factory Owner, Arusha</small>
-                </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-top border-secondary pt-4 pb-3">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <p class="mb-0 text-light">
+                &copy; 2024 DukeOps. All rights reserved.
+              </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
+                <a href="#" class="text-light text-decoration-none small"
+                  >Privacy Policy</a
+                >
+                <a href="#" class="text-light text-decoration-none small"
+                  >Terms of Service</a
+                >
+                <a href="#" class="text-light text-decoration-none small"
+                  >Sitemap</a
+                >
               </div>
-              <blockquote class="blockquote mb-0">
-                <p class="mb-3">"Their HSE training program transformed our workplace safety culture. The team is knowledgeable, professional, and truly cares about client success. Outstanding service!"</p>
-                <div class="d-flex">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                </div>
-              </blockquote>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Modern Comprehensive Footer -->
-  <footer id="main-footer" class="bg-dark text-white">
-    <div class="container">
-      <!-- Main Footer Content -->
-      <div class="row py-5">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="mb-4">
-            <h3 class="text-gradient mb-3">DukeOps</h3>
-            <p class="text-light mb-4">Empowering Tanzanian businesses with professional HSE, utilities, hardware, and construction services. Your trusted partner for quality and excellence.</p>
-            <div class="d-flex gap-3">
-              <a href="https://wa.me/255123456789" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px;" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-              <a href="mailto:info@dukeops.co.tz" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px;">
-                <i class="bi bi-envelope"></i>
-              </a>
-              <a href="tel:+255123456789" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px;">
-                <i class="bi bi-telephone"></i>
-              </a>
-              <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px;">
-                <i class="bi bi-linkedin"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-white mb-3">Services</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="services.html#hse" class="text-light text-decoration-none">HSE Consultancy</a></li>
-            <li class="mb-2"><a href="services.html#utility" class="text-light text-decoration-none">Utility Services</a></li>
-            <li class="mb-2"><a href="hardware.html" class="text-light text-decoration-none">Hardware Supplies</a></li>
-            <li class="mb-2"><a href="services.html#construction" class="text-light text-decoration-none">Construction</a></li>
-          </ul>
-        </div>
-        
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-white mb-3">Company</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
-            <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
-            <li class="mb-2"><a href="#gallery-section" class="text-light text-decoration-none">Projects</a></li>
-            <li class="mb-2"><a href="#testimonials-section" class="text-light text-decoration-none">Testimonials</a></li>
-          </ul>
-        </div>
-        
-        <div class="col-lg-4">
-          <h5 class="text-white mb-3">Contact Information</h5>
-          <div class="mb-3">
-            <div class="d-flex align-items-start mb-2">
-              <i class="bi bi-geo-alt text-primary me-2 mt-1"></i>
-              <div>
-                <strong>Head Office:</strong><br>
-                <span class="text-light">Dar es Salaam, Tanzania</span>
-              </div>
-            </div>
-            <div class="d-flex align-items-center mb-2">
-              <i class="bi bi-telephone text-primary me-2"></i>
-              <span class="text-light">+255 123 456 789</span>
-            </div>
-            <div class="d-flex align-items-center mb-2">
-              <i class="bi bi-envelope text-primary me-2"></i>
-              <span class="text-light">info@dukeops.co.tz</span>
-            </div>
-            <div class="d-flex align-items-center">
-              <i class="bi bi-clock text-primary me-2"></i>
-              <span class="text-light">Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</span>
-            </div>
-          </div>
-          
-          <!-- Quick Contact Form -->
-          <div class="glass-card p-3" style="background: rgba(255, 255, 255, 0.1);">
-            <h6 class="text-white mb-2">Quick Inquiry</h6>
-            <form id="footer-contact-form">
-              <div class="mb-2">
-                <input type="email" class="form-control form-control-sm" placeholder="Your email" required>
-              </div>
-              <div class="mb-2">
-                <textarea class="form-control form-control-sm" rows="2" placeholder="Your message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-sm w-100">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Footer Bottom -->
-      <div class="border-top border-secondary pt-4 pb-3">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <p class="mb-0 text-light">&copy; 2024 DukeOps. All rights reserved.</p>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
-              <a href="#" class="text-light text-decoration-none small">Privacy Policy</a>
-              <a href="#" class="text-light text-decoration-none small">Terms of Service</a>
-              <a href="#" class="text-light text-decoration-none small">Sitemap</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/255123456789?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services"
+      class="whatsapp-float"
+      id="whatsapp-float-btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/255123456789?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services" class="whatsapp-float" id="whatsapp-float-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-  </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+      });
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>AOS.init();</script>
-</body>
-</html> 
+      // Custom Scroll Animations
+      document.addEventListener("DOMContentLoaded", function () {
+        // Trigger hero animations immediately
+        const heroElements = document.querySelectorAll(
+          "#hero-section .fade-in, #hero-section .scale-in, #hero-section .bounce-in, #hero-section .slide-in-left"
+        );
+        heroElements.forEach((el) => {
+          setTimeout(() => {
+            el.classList.add("animate");
+          }, 100);
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+            }
+          });
+        }, observerOptions);
+
+        // Observe all animation elements
+        const animationElements = document.querySelectorAll(
+          ".fade-in, .slide-in-left, .slide-in-right, .scale-in, .rotate-in, .bounce-in"
+        );
+        animationElements.forEach((el) => {
+          observer.observe(el);
+        });
+
+        // Counter animation for stats
+        const animateCounters = () => {
+          const counters = document.querySelectorAll(".stat-number");
+          counters.forEach((counter) => {
+            const target = parseInt(counter.textContent.replace(/\D/g, ""));
+            const suffix = counter.textContent.replace(/\d/g, "");
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                counter.textContent = target + suffix;
+                clearInterval(timer);
+              } else {
+                counter.textContent = Math.floor(current) + suffix;
+              }
+            }, 30);
+          });
+        };
+
+        // Trigger counter animation when stats section is visible
+        const statsObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animateCounters();
+                statsObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        const statsSection = document.querySelector(".hero-stats");
+        if (statsSection) {
+          statsObserver.observe(statsSection);
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
