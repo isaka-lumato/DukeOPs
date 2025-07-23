@@ -1141,18 +1141,18 @@ h6 {
 .glass-card {
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.85) 100%
+    rgba(26, 26, 26, 0.95) 0%,
+    rgba(0, 0, 0, 0.9) 100%
   );
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: var(--radius-2xl);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    inset 0 1px 0 rgba(212, 175, 55, 0.2);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   position: relative;
-  color: var(--gray-900);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .glass-card::before {
@@ -1524,11 +1524,8 @@ h6 {
 
 /* PREMIUM FORMS */
 #contact-form {
-  background: var(--white);
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-lg);
-  padding: 3rem;
-  border: 1px solid var(--gray-200);
 }
 
 .form-control {
@@ -6315,4 +6312,1008 @@ section {
 /* Why Choose Us Section Black & Gold */
 #why-choose-us {
   background: linear-gradient(135deg, #faf9f7 0%, #f5f3f0 100%) !important;
+}
+
+/* TEXT CONTRAST IMPROVEMENTS FOR BLACK & GOLD THEME */
+.text-muted {
+  color: rgba(212, 175, 55, 0.9) !important;
+}
+
+.glass-card .text-muted {
+  color: rgba(212, 175, 55, 0.8) !important;
+}
+
+.glass-card p,
+.glass-card .card-text,
+.glass-card li {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.glass-card .card-title,
+.glass-card h5,
+.glass-card h4,
+.glass-card h3 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.feature-text,
+.testimonial-text,
+.hardware-card p {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.form-label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.form-control,
+.form-select {
+  color: rgba(255, 255, 255, 0.9) !important;
+  background-color: rgba(26, 26, 26, 0.8) !important;
+  border-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Hardware page specific text improvements */
+.hardware-card .text-muted {
+  color: rgba(212, 175, 55, 0.9) !important;
+  font-weight: 600;
+}
+
+.price-text {
+  color: rgba(212, 175, 55, 0.95) !important;
+  font-weight: 700;
+}
+
+/* Ensure all card text is readable */
+.card .text-muted {
+  color: rgba(212, 175, 55, 0.85) !important;
+}
+
+.card-body .text-muted {
+  color: rgba(212, 175, 55, 0.9) !important;
+}
+/* MOBILE CONTACT FORM COMPLETE REDESIGN */
+@media (max-width: 768px) {
+  #contact-section {
+    padding: 1rem 0 2rem 0;
+    min-height: auto;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: white;
+  }
+
+  #contact-section .container {
+    padding: 0 0.75rem;
+    max-width: 100%;
+  }
+
+  /* Compact title section */
+  #contact-section .col-lg-8 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  #contact-title {
+    font-size: 2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .lead {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.4;
+  }
+
+  /* Redesigned form container */
+  #contact-section .glass-card {
+    background: rgba(26, 26, 26, 0.95) !important;
+    border: 1px solid rgba(212, 175, 55, 0.2) !important;
+    border-radius: 1rem !important;
+    padding: 1.25rem !important;
+    margin: 0 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* Stack all form elements vertically */
+  #contact-form .row {
+    margin: 0 !important;
+  }
+
+  #contact-form .col-md-6 {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 1rem;
+  }
+
+  /* Compact form inputs */
+  .form-control,
+  .form-select {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid rgba(212, 175, 55, 0.4) !important;
+    background-color: rgba(45, 45, 45, 0.9) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    min-height: 45px !important;
+    transition: all 0.2s ease !important;
+    margin-bottom: 0 !important;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: rgba(212, 175, 55, 0.8) !important;
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2) !important;
+    background-color: rgba(45, 45, 45, 1) !important;
+    outline: none !important;
+  }
+
+  /* Remove validation styles that cause red borders */
+  .form-control:invalid,
+  .form-select:invalid {
+    border-color: rgba(212, 175, 55, 0.4) !important;
+    box-shadow: none !important;
+  }
+
+  /* Compact labels */
+  .form-label {
+    font-weight: 500 !important;
+    margin-bottom: 0.4rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Textarea adjustments */
+  #contact-message {
+    min-height: 100px !important;
+    resize: vertical !important;
+  }
+
+  /* Compact spacing */
+  .mt-4 {
+    margin-top: 1rem !important;
+  }
+
+  .mt-2 {
+    margin-top: 0.75rem !important;
+  }
+
+  /* Better submit button */
+  #contact-form .btn-primary {
+    padding: 0.875rem 2rem !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.5rem !important;
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%) !important;
+    border: none !important;
+    box-shadow: 0 3px 12px rgba(212, 175, 55, 0.3) !important;
+    transition: all 0.3s ease !important;
+    width: 100% !important;
+  }
+
+  #contact-form .btn-primary:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4) !important;
+  }
+
+  /* Improved select dropdown */
+  .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23d4af37' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 14px 10px !important;
+  }
+
+  /* Better placeholder styling */
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Compact contact info cards */
+  .row.mt-5.g-4 {
+    margin-top: 1.5rem !important;
+    gap: 0.75rem !important;
+  }
+
+  .row.mt-5.g-4 .glass-card {
+    padding: 1.25rem !important;
+    margin-bottom: 0.75rem !important;
+    background: rgba(26, 26, 26, 0.9) !important;
+    border: 1px solid rgba(212, 175, 55, 0.2) !important;
+  }
+
+  /* Alert messages */
+  .alert {
+    border-radius: 0.5rem !important;
+    padding: 0.75rem !important;
+    font-size: 0.9rem !important;
+    margin-top: 0.75rem !important;
+  }
+
+  /* Remove excessive spacing */
+  .row.g-3 {
+    gap: 0 !important;
+  }
+
+  /* Form group spacing */
+  .form-group {
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* Additional improvements for very small screens */
+@media (max-width: 480px) {
+  #contact-section .glass-card {
+    padding: 1rem !important;
+    margin: 0 0.25rem;
+  }
+
+  .form-control,
+  .form-select {
+    padding: 0.75rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  #contact-title {
+    font-size: 2rem !important;
+  }
+
+  .lead {
+    font-size: 1rem !important;
+  }
+
+  #contact-form .btn-primary {
+    padding: 0.875rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+/* Ensure form validation styles work with dark theme */
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.form-control.is-valid,
+.form-select.is-valid {
+  border-color: #198754 !important;
+}
+
+.invalid-feedback {
+  color: #dc3545 !important;
+}
+
+.valid-feedback {
+  color: #198754 !important;
+}
+/* ADDITIONAL MOBILE CONTACT FORM FIXES */
+@media (max-width: 768px) {
+  /* Remove all excessive spacing */
+  #contact-section .col-lg-8.mx-auto {
+    margin-bottom: 1rem !important;
+  }
+
+  /* Make form container even more compact */
+  #contact-section .col-lg-8 {
+    padding: 0 !important;
+  }
+
+  /* Override Bootstrap row spacing */
+  #contact-form .row.g-3 {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Force single column layout */
+  #contact-form .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* Remove validation error styling completely */
+  .form-control:invalid,
+  .form-select:invalid,
+  .was-validated .form-control:invalid,
+  .was-validated .form-select:invalid {
+    border-color: rgba(212, 175, 55, 0.4) !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+
+  .form-control:valid,
+  .form-select:valid,
+  .was-validated .form-control:valid,
+  .was-validated .form-select:valid {
+    border-color: rgba(212, 175, 55, 0.4) !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Override any Bootstrap validation feedback */
+  .invalid-feedback,
+  .valid-feedback {
+    display: none !important;
+  }
+
+  /* Ensure consistent input styling */
+  .form-control,
+  .form-select {
+    border: 1px solid rgba(212, 175, 55, 0.4) !important;
+    background-color: rgba(45, 45, 45, 0.9) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem !important;
+    border-radius: 0.5rem !important;
+    min-height: 45px !important;
+    transition: all 0.2s ease !important;
+    box-shadow: none !important;
+  }
+
+  /* Focus states */
+  .form-control:focus,
+  .form-select:focus {
+    border-color: rgba(212, 175, 55, 0.8) !important;
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2) !important;
+    background-color: rgba(45, 45, 45, 1) !important;
+    outline: none !important;
+  }
+
+  /* Remove any margin/padding from form sections */
+  .row.mt-2,
+  .row.mt-4 {
+    margin-top: 0.75rem !important;
+  }
+
+  .mt-4 {
+    margin-top: 0.75rem !important;
+  }
+
+  /* Compact the entire form */
+  #contact-form {
+    padding: 0 !important;
+  }
+
+  /* Better button spacing */
+  .d-grid {
+    margin-top: 1rem !important;
+  }
+
+  /* Ensure proper select styling */
+  .form-select option {
+    background-color: rgba(45, 45, 45, 1) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+  }
+}
+
+/* Very small screens - even more compact */
+@media (max-width: 480px) {
+  #contact-section {
+    padding: 0.75rem 0 1.5rem 0 !important;
+  }
+
+  #contact-section .container {
+    padding: 0 0.5rem !important;
+  }
+
+  #contact-section .glass-card {
+    padding: 1rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+  .form-control,
+  .form-select {
+    padding: 0.625rem 0.875rem !important;
+    font-size: 0.9rem !important;
+    min-height: 42px !important;
+  }
+
+  .form-label {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  #contact-form .btn-primary {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  #contact-title {
+    font-size: 1.75rem !important;
+  }
+
+  .lead {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Override any conflicting Bootstrap styles */
+.form-control:not(:placeholder-shown):invalid,
+.form-control:not(:placeholder-shown):valid {
+  border-color: rgba(212, 175, 55, 0.4) !important;
+  background-image: none !important;
+}
+
+/* Ensure form doesn't show validation on load */
+.needs-validation .form-control:invalid,
+.needs-validation .form-select:invalid {
+  border-color: rgba(212, 175, 55, 0.4) !important;
+  background-image: none !important;
+}
+/* MOBILE CONTACT FORM COMPLETE REDESIGN */
+@media (max-width: 768px) {
+  #contact-section {
+    padding: 1rem 0 2rem 0 !important;
+    min-height: auto !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+    color: white !important;
+  }
+
+  #contact-section .container {
+    padding: 0 0.75rem !important;
+    max-width: 100% !important;
+  }
+
+  /* Compact title section */
+  #contact-section .col-lg-8 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  #contact-title {
+    font-size: 2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #contact-section .lead {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Redesigned form container */
+  #contact-section .glass-card {
+    background: rgba(26, 26, 26, 0.95) !important;
+    border: 1px solid rgba(212, 175, 55, 0.2) !important;
+    border-radius: 1rem !important;
+    padding: 1.25rem !important;
+    margin: 0 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* Stack all form elements vertically */
+  #contact-form .row {
+    margin: 0 !important;
+  }
+
+  #contact-form .col-md-6 {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Compact form inputs */
+  #contact-section .form-control,
+  #contact-section .form-select {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid rgba(212, 175, 55, 0.4) !important;
+    background-color: rgba(15, 23, 42, 0.8) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    min-height: 45px !important;
+    transition: all 0.2s ease !important;
+    margin-bottom: 0 !important;
+  }
+
+  #contact-section .form-control:focus,
+  #contact-section .form-select:focus {
+    border-color: rgba(212, 175, 55, 0.8) !important;
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2) !important;
+    background-color: rgba(15, 23, 42, 0.9) !important;
+    outline: none !important;
+  }
+
+  /* Remove validation error styling */
+  #contact-section .form-control:invalid,
+  #contact-section .form-select:invalid {
+    border-color: rgba(212, 175, 55, 0.4) !important;
+    box-shadow: none !important;
+  }
+
+  /* Compact labels */
+  #contact-section .form-label {
+    font-weight: 500 !important;
+    margin-bottom: 0.4rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Textarea specific */
+  #contact-section #contact-message {
+    min-height: 100px !important;
+    resize: vertical !important;
+  }
+
+  /* Compact spacing */
+  #contact-section .mt-4 {
+    margin-top: 1rem !important;
+  }
+
+  #contact-section .mt-2 {
+    margin-top: 0.75rem !important;
+  }
+
+  /* Improved submit button */
+  #contact-form .btn-primary {
+    padding: 0.875rem 2rem !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.5rem !important;
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%) !important;
+    border: none !important;
+    box-shadow: 0 3px 12px rgba(212, 175, 55, 0.3) !important;
+    transition: all 0.3s ease !important;
+    width: 100% !important;
+  }
+
+  #contact-form .btn-primary:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4) !important;
+  }
+
+  /* Select dropdown styling */
+  #contact-section .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23d4af37' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 14px 10px !important;
+  }
+
+  /* Placeholder styling */
+  #contact-section .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Contact info cards - more compact */
+  #contact-section .row.mt-5.g-4 {
+    margin-top: 1.5rem !important;
+    gap: 0.75rem !important;
+  }
+
+  #contact-section .row.mt-5.g-4 .glass-card {
+    padding: 1.25rem !important;
+    margin-bottom: 0.75rem !important;
+    background: rgba(26, 26, 26, 0.9) !important;
+    border: 1px solid rgba(212, 175, 55, 0.2) !important;
+  }
+
+  /* Alert messages */
+  #contact-section .alert {
+    border-radius: 0.5rem !important;
+    padding: 0.75rem !important;
+    font-size: 0.9rem !important;
+    margin-top: 0.75rem !important;
+  }
+
+  /* Remove excessive spacing */
+  #contact-section .row.justify-content-center {
+    margin-bottom: 0 !important;
+  }
+
+  /* Form group spacing */
+  #contact-section .row.g-3 {
+    gap: 0 !important;
+    margin-bottom: 0.75rem !important;
+  }
+}
+
+/* Additional improvements for very small screens */
+@media (max-width: 480px) {
+  #contact-section .glass-card {
+    padding: 1rem !important;
+    margin: 0 0.25rem !important;
+  }
+
+  #contact-section .form-control,
+  #contact-section .form-select {
+    padding: 0.65rem 0.85rem !important;
+    font-size: 0.9rem !important;
+    min-height: 42px !important;
+  }
+
+  #contact-title {
+    font-size: 1.75rem !important;
+  }
+
+  #contact-section .lead {
+    font-size: 0.95rem !important;
+  }
+
+  #contact-form .btn-primary {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+/* REFINED MODERN MOBILE CONTACT FORM */
+@media (max-width: 768px) {
+  /* Section styling */
+  #contact-section {
+    padding: 2rem 0 3rem 0 !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+    color: white !important;
+    min-height: auto !important;
+  }
+
+  #contact-section .container {
+    padding: 0 1rem !important;
+  }
+
+  /* Header section */
+  #contact-section .col-lg-8.mx-auto {
+    margin-bottom: 2rem !important;
+  }
+
+  #contact-title {
+    font-size: 2.25rem !important;
+    margin-bottom: 0.75rem !important;
+    font-weight: 700 !important;
+  }
+
+  #contact-section .lead {
+    font-size: 1.1rem !important;
+    margin-bottom: 0 !important;
+    opacity: 0.9 !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Modern glass card */
+  #contact-section .glass-card {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 1.25rem !important;
+    padding: 1.75rem 1.5rem !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+    margin: 0 !important;
+  }
+
+  /* Form layout improvements */
+  #contact-form .row.g-3 {
+    margin: 0 !important;
+    gap: 0 !important;
+  }
+
+  #contact-form .col-md-6 {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  /* Modern form labels */
+  #contact-section .form-label {
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.025em !important;
+    text-transform: uppercase !important;
+    opacity: 0.9 !important;
+  }
+
+  /* Premium form inputs */
+  #contact-section .form-control,
+  #contact-section .form-select {
+    padding: 1rem 1.25rem !important;
+    font-size: 1rem !important;
+    border-radius: 0.75rem !important;
+    border: 2px solid rgba(212, 175, 55, 0.3) !important;
+    background: rgba(45, 55, 72, 0.9) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    min-height: 54px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    font-weight: 400 !important;
+  }
+
+  /* Focus states */
+  #contact-section .form-control:focus,
+  #contact-section .form-select:focus {
+    border-color: rgba(212, 175, 55, 0.8) !important;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2) !important;
+    background: rgba(55, 65, 82, 0.95) !important;
+    outline: none !important;
+    transform: translateY(-1px) !important;
+  }
+
+  /* Placeholder styling */
+  #contact-section .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-weight: 400 !important;
+  }
+
+  /* Textarea specific */
+  #contact-section #contact-message {
+    min-height: 120px !important;
+    resize: vertical !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Select dropdown */
+  #contact-section .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1rem center !important;
+    background-size: 16px 12px !important;
+  }
+
+  /* Premium submit button */
+  #contact-form .btn-primary {
+    padding: 1.125rem 2rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.75rem !important;
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%) !important;
+    border: none !important;
+    box-shadow: 0 6px 24px rgba(212, 175, 55, 0.35) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    width: 100% !important;
+    letter-spacing: 0.025em !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-top: 0.5rem !important;
+  }
+
+  #contact-form .btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 35px rgba(212, 175, 55, 0.45) !important;
+  }
+
+  /* Button shimmer effect */
+  #contact-form .btn-primary::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ) !important;
+    transition: left 0.6s !important;
+  }
+
+  #contact-form .btn-primary:hover::before {
+    left: 100% !important;
+  }
+
+  /* Form spacing */
+  #contact-section .mt-4 {
+    margin-top: 1.25rem !important;
+  }
+
+  #contact-section .mt-2 {
+    margin-top: 1rem !important;
+  }
+
+  /* Contact info cards */
+  #contact-section .row.mt-5.g-4 {
+    margin-top: 2.5rem !important;
+    gap: 1rem !important;
+  }
+
+  #contact-section .row.mt-5.g-4 .glass-card {
+    padding: 1.5rem !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 1rem !important;
+    transition: all 0.3s ease !important;
+    margin-bottom: 1rem !important;
+  }
+
+  #contact-section .row.mt-5.g-4 .glass-card:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25) !important;
+    border-color: rgba(212, 175, 55, 0.3) !important;
+  }
+
+  /* Alert styling */
+  #contact-section .alert {
+    border-radius: 0.75rem !important;
+    padding: 1rem !important;
+    margin-top: 1rem !important;
+    border: none !important;
+    backdrop-filter: blur(10px) !important;
+  }
+
+  /* Remove validation styling */
+  #contact-section .form-control:invalid,
+  #contact-section .form-select:invalid {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  #contact-section {
+    padding: 1.5rem 0 2.5rem 0 !important;
+  }
+
+  #contact-section .container {
+    padding: 0 0.75rem !important;
+  }
+
+  #contact-section .glass-card {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 1rem !important;
+  }
+
+  #contact-title {
+    font-size: 2rem !important;
+  }
+
+  #contact-section .lead {
+    font-size: 1rem !important;
+  }
+
+  #contact-section .form-control,
+  #contact-section .form-select {
+    padding: 0.875rem 1rem !important;
+    font-size: 0.95rem !important;
+    min-height: 50px !important;
+  }
+
+  #contact-form .btn-primary {
+    padding: 1rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+}
+/* MODERN GLASS MORPHISM MOBILE CONTACT FORM */
+@media (max-width: 768px) {
+  /* Modern glass morphism form container */
+  #contact-section .glass-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 1.5rem !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+    margin: 0 !important;
+  }
+
+  /* Glass morphism form inputs */
+  #contact-section .form-control,
+  #contact-section .form-select {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 0.75rem !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    padding: 1rem 1.25rem !important;
+    font-size: 1rem !important;
+    min-height: 52px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  /* Focus states for glass inputs */
+  #contact-section .form-control:focus,
+  #contact-section .form-select:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(212, 175, 55, 0.6) !important;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2) !important;
+    outline: none !important;
+    transform: translateY(-1px) !important;
+  }
+
+  /* Modern labels */
+  #contact-section .form-label {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.5rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  /* Glass placeholder text */
+  #contact-section .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-weight: 400 !important;
+  }
+
+  /* Properly sized submit button */
+  #contact-form .btn-primary {
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%) !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    padding: 0.875rem 2rem !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: white !important;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3) !important;
+    transition: all 0.3s ease !important;
+    width: auto !important;
+    display: inline-block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Center the button */
+  #contact-form .d-grid {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 1.5rem !important;
+  }
+
+  /* Button hover effect */
+  #contact-form .btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4) !important;
+  }
+
+  /* Glass select dropdown */
+  #contact-section .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1rem center !important;
+    background-size: 16px 12px !important;
+  }
+
+  /* Textarea specific styling */
+  #contact-section #contact-message {
+    min-height: 120px !important;
+    resize: vertical !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Form spacing */
+  #contact-form .col-md-6 {
+    margin-bottom: 1.25rem !important;
+  }
+
+  #contact-section .mt-4 {
+    margin-top: 1.25rem !important;
+  }
+
+  /* Glass contact info cards */
+  #contact-section .row.mt-5.g-4 .glass-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 1rem !important;
+    padding: 1.5rem !important;
+    transition: all 0.3s ease !important;
+  }
+
+  #contact-section .row.mt-5.g-4 .glass-card:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25) !important;
+  }
+}
+/* DESKTOP TITLE AND SUBTITLE FIX ONLY */
+@media (min-width: 769px) {
+  /* Fix desktop title color - change from gold to dark */
+  #contact-title {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    font-weight: 800 !important;
+  }
+
+  /* Fix desktop subtitle color */
+  #contact-section .lead {
+    color: #64748b !important;
+    font-weight: 500 !important;
+  }
 }
