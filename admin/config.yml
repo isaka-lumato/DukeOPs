@@ -191,17 +191,12 @@ collections:
           options: ["Tools", "Materials", "Electrical", "Plumbing"],
         }
       - { label: "Description", name: "description", widget: "text" }
-      - {
-          label: "Price Range",
-          name: "price_range",
-          widget: "string",
-          required: false,
-        }
+
       - {
           label: "Product Image",
           name: "image",
           widget: "image",
-          required: false,
+          required: true,
         }
       - {
           label: "Bootstrap Icon",
