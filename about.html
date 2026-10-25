@@ -1,400 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      About Us - DukeOps | Professional Business Solutions in Tanzania
-    </title>
-    <meta
-      name="description"
-      content="Learn about DukeOps - Tanzania's trusted partner for HSE consultancy, construction, and utility services. Discover our mission, values, and commitment to excellence."
-    />
-    <meta
-      name="keywords"
-      content="DukeOps about, Tanzania business, HSE consultancy, construction company, utility services"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | DukeOps Tanzania — Engineering, Construction &amp; Supply</title>
+  <meta name="description" content="Learn how DukeOps combines HSE consultancy, utility engineering, hardware supply, and construction delivery for commercial and residential clients across Tanzania." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f1419" />
+  <link rel="canonical" href="https://dukeops.co.tz/about.html" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="About DukeOps - Professional Business Solutions in Tanzania"
-    />
-    <meta
-      property="og:description"
-      content="Learn about our mission to empower Tanzanian businesses with professional HSE, construction, and utility services."
-    />
-    <meta
-      property="og:image"
-      content="assets/images/Gemini_Generated_Image_ptptnxptptnxptpt.png"
-    />
-    <meta property="og:url" content="https://dukeops.co.tz/about.html" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DukeOps" />
+  <meta property="og:title" content="About DukeOps | Engineering Discipline in Every Build &amp; Supply" />
+  <meta property="og:description" content="Founded in Dar es Salaam, DukeOps unites HSE compliance, utility engineering, hardware supply, and civil construction under one accountable team." />
+  <meta property="og:url" content="https://dukeops.co.tz/about.html" />
+  <meta property="og:image" content="https://dukeops.co.tz/assets/images/about-us.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <!-- Font Awesome for better social icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-progress" id="scroll-progress"></div>
-    <!-- Navbar -->
-    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a
-          class="navbar-brand d-flex align-items-center"
-          id="navbar-brand"
-          href="index.html"
-        >
-          <img
-            src="assets/images/logo.jpg"
-            alt="DukeOps Logo"
-            style="height: 40px; margin-right: 10px"
-          />
-          <span>DukeOps</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" id="nav-home" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-about" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-services" href="services.html"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-hardware" href="hardware.html"
-                >Hardware Catalog</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-contact" href="contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/png" href="assets/images/logo.jpg" />
+  <link rel="apple-touch-icon" href="assets/images/logo.jpg" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Primary Navigation -->
+  <header class="site-header" id="main-navbar">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="DukeOps Home">
+        <img src="assets/images/logo.jpg" alt="DukeOps Logo" class="brand__logo" width="38" height="38" />
+        <div class="brand__text">
+          <span class="brand__name">DukeOps</span>
+          <span class="brand__tag">Engineering &amp; Supply</span>
         </div>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active" aria-current="page">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="hardware.html" class="nav-link">Hardware</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="quote-tray-btn d-none" data-open-quote-drawer data-hide-when-empty aria-label="Open Hardware Quote List">
+          <i class="bi bi-clipboard2-check" aria-hidden="true"></i>
+          <span>Quote List</span>
+          <span class="quote-tray-count">0</span>
+        </button>
+        <a href="contact.html" class="btn btn-gold btn-sm header-cta">Request a Quote</a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav__list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav__link active" aria-current="page">About</a></li>
+        <li><a href="services.html" class="mobile-nav__link">Services</a></li>
+        <li><a href="hardware.html" class="mobile-nav__link">Hardware Catalog</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav__footer">
+        <a href="contact.html" class="btn btn-gold btn-block">Request a Quote</a>
+        <a href="https://wa.me/255699669959?text=Hello%20DukeOps,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" class="btn btn-outline-light btn-block">
+          <i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp +255 699 669 959
+        </a>
       </div>
     </nav>
+  </header>
 
-    <!-- Modern About Section -->
-    <section id="about-section">
+  <main id="main-content">
+    <!-- Light Architectural Page Header -->
+    <section class="page-hero">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-            <div class="text-center">
-              <img
-                src="assets/images/about-us.jpg"
-                class="img-fluid rounded shadow-lg"
-                alt="About DukeOps"
-                style="max-width: 100%; height: auto; border-radius: 2rem"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="glass-card p-5 glow-on-hover">
-              <h1 id="about-title" class="text-gradient mb-4">About DukeOps</h1>
-              <p id="about-description" class="lead mb-4">
-                DukeOps is a Tanzanian startup dedicated to providing top-tier
-                business solutions in Health, Safety, and Environment (HSE),
-                utility services, hardware supplies, and construction. Our
-                mission is to empower businesses and individuals with reliable,
-                professional, and innovative services tailored to the unique
-                needs of the Tanzanian market.
-              </p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span aria-current="page">About</span>
+        </nav>
+        <h1 id="about-title" class="page-hero__title">
+          Engineering discipline in every build and supply.
+        </h1>
+        <p id="about-subtitle" class="page-hero__lead">
+          Founded in Dar es Salaam, DukeOps brings safety consultancy, utility engineering, hardware supply, and civil construction under one accountable roof.
+        </p>
+      </div>
+    </section>
 
-              <h4 class="mb-3">Our Core Values</h4>
-              <div id="about-values-list" class="row g-3">
-                <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3"
-                      style="width: 40px; height: 40px"
-                    >
-                      <i class="bi bi-shield-check text-white"></i>
-                    </div>
-                    <span class="fw-semibold">Professionalism & Integrity</span>
-                  </div>
-                </div>
-                <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3"
-                      style="width: 40px; height: 40px"
-                    >
-                      <i class="bi bi-people text-white"></i>
-                    </div>
-                    <span class="fw-semibold">Client-Centered Solutions</span>
-                  </div>
-                </div>
-                <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3"
-                      style="width: 40px; height: 40px"
-                    >
-                      <i class="bi bi-award text-white"></i>
-                    </div>
-                    <span class="fw-semibold">Quality & Safety First</span>
-                  </div>
-                </div>
-                <div class="col-sm-6" data-aos="fade-up" data-aos-delay="400">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3"
-                      style="width: 40px; height: 40px"
-                    >
-                      <i class="bi bi-arrow-up-circle text-white"></i>
-                    </div>
-                    <span class="fw-semibold">Continuous Improvement</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- Story & Mission Section -->
+    <section id="about-section" class="section">
+      <div class="container">
+        <div class="about-split">
+          <div class="about-photo reveal">
+            <img
+              src="assets/images/about-us.jpg"
+              alt="DukeOps engineering and construction team reviewing site plans in Dar es Salaam"
+              width="800"
+              height="600"
+            />
+          </div>
+
+          <div class="about-narrative reveal">
+            <h2>Built to solve fragmented project delivery in Tanzania</h2>
+            <p id="about-description">
+              Across East Africa, commercial and residential projects frequently stall when safety consultants, electrical and plumbing contractors, builders, and material suppliers work in silos. DukeOps was established in Dar es Salaam to close that gap—giving project owners a single, technically rigorous partner from site risk assessment through final handover.
+            </p>
+            <p id="about-mission">
+              <strong>Our Mandate:</strong> Deliver compliant workplace safety programs, durable MEP utility installations, verified construction hardware, and well-supervised building works—on schedule and transparently priced.
+            </p>
+            <p id="about-vision">
+              <strong>Our Standard:</strong> Every project we touch—whether a 50-bag cement dispatch, a three-phase switchgear overhaul, or a multi-story commercial build—is governed by documented safety controls and clear technical accountability.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Modern Comprehensive Footer -->
-    <footer id="main-footer" class="bg-dark text-white">
+    <!-- Core Operating Principles — Open 2x2 Architectural Grid -->
+    <section class="section section--subtle">
       <div class="container">
-        <!-- Main Footer Content -->
-        <div class="row py-5">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="mb-4">
-              <h3 class="text-gradient mb-3">DukeOps</h3>
-              <p class="text-light mb-4">
-                Empowering Tanzanian businesses with professional HSE,
-                utilities, hardware, and construction services. Your trusted
-                partner for quality and excellence.
-              </p>
-              <div class="social-icons-wrapper d-flex gap-2">
-                <a
-                  href="https://wa.me/255123456789"
-                  class="social-icon whatsapp"
-                  target="_blank"
-                  aria-label="WhatsApp"
-                >
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-                <a
-                  href="mailto:info@dukeops.co.tz"
-                  class="social-icon email"
-                  aria-label="Email"
-                >
-                  <i class="far fa-envelope"></i>
-                </a>
-                <a
-                  href="tel:+255123456789"
-                  class="social-icon phone"
-                  aria-label="Phone"
-                >
-                  <i class="fas fa-phone-alt"></i>
-                </a>
-                <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="social-icon facebook" aria-label="Facebook">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a
-                  href="#"
-                  class="social-icon instagram"
-                  aria-label="Instagram"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="text-white mb-3">Services</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a
-                  href="services.html#hse"
-                  class="text-light text-decoration-none"
-                  >HSE Consultancy</a
-                >
-              </li>
-              <li class="mb-2">
-                <a
-                  href="services.html#utility"
-                  class="text-light text-decoration-none"
-                  >Utility Services</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="hardware.html" class="text-light text-decoration-none"
-                  >Hardware Supplies</a
-                >
-              </li>
-              <li class="mb-2">
-                <a
-                  href="services.html#construction"
-                  class="text-light text-decoration-none"
-                  >Construction</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="text-white mb-3">Company</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="about.html" class="text-light text-decoration-none"
-                  >About Us</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="contact.html" class="text-light text-decoration-none"
-                  >Contact</a
-                >
-              </li>
-              <li class="mb-2">
-                <a
-                  href="index.html#gallery-section"
-                  class="text-light text-decoration-none"
-                  >Projects</a
-                >
-              </li>
-              <li class="mb-2">
-                <a
-                  href="index.html#testimonials-section"
-                  class="text-light text-decoration-none"
-                  >Testimonials</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4">
-            <h5 class="text-white mb-3">Contact Information</h5>
-            <div class="mb-3">
-              <div class="d-flex align-items-start mb-2">
-                <i class="bi bi-geo-alt text-primary me-2 mt-1"></i>
-                <div>
-                  <strong>Head Office:</strong><br />
-                  <span class="text-light">Dar es Salaam, Tanzania</span>
-                </div>
-              </div>
-              <div class="d-flex align-items-center mb-2">
-                <i class="bi bi-telephone text-primary me-2"></i>
-                <span class="text-light">+255 123 456 789</span>
-              </div>
-              <div class="d-flex align-items-center mb-2">
-                <i class="bi bi-envelope text-primary me-2"></i>
-                <span class="text-light">info@dukeops.co.tz</span>
-              </div>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-clock text-primary me-2"></i>
-                <span class="text-light">Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</span>
-              </div>
-            </div>
-
-            <!-- Quick Contact Form -->
-            <div
-              class="glass-card p-3"
-              style="background: rgba(255, 255, 255, 0.1)"
-            >
-              <h6 class="text-white mb-2">Quick Inquiry</h6>
-              <form id="footer-contact-form">
-                <div class="mb-2">
-                  <input
-                    type="email"
-                    class="form-control form-control-sm"
-                    placeholder="Your email"
-                    required
-                  />
-                </div>
-                <div class="mb-2">
-                  <textarea
-                    class="form-control form-control-sm"
-                    rows="2"
-                    placeholder="Your message"
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-sm w-100">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title">Operating principles</h2>
+          <p class="section-lead">
+            The standards that guide our engineers, safety auditors, site supervisors, and supply desk every day.
+          </p>
         </div>
 
-        <!-- Footer Bottom -->
-        <div class="border-top border-secondary pt-4 pb-3">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <p class="mb-0 text-light">
-                &copy; 2024 DukeOps. All rights reserved.
-              </p>
-            </div>
-            <div class="col-md-6 text-md-end">
-              <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
-                <a href="#" class="text-light text-decoration-none small"
-                  >Privacy Policy</a
-                >
-                <a href="#" class="text-light text-decoration-none small"
-                  >Terms of Service</a
-                >
-                <a href="#" class="text-light text-decoration-none small"
-                  >Sitemap</a
-                >
-              </div>
-            </div>
+        <ul id="about-values-list" class="values-open-grid">
+          <li class="value-open-item reveal">
+            <span class="value-open-item__num">01</span>
+            <h3 class="value-open-item__title">Safety Without Compromise</h3>
+            <p class="value-open-item__text">
+              Zero-harm operations come first. We enforce OSHA Tanzania and international HSE protocols across our own work sites and every client facility we audit.
+            </p>
+          </li>
+
+          <li class="value-open-item reveal">
+            <span class="value-open-item__num">02</span>
+            <h3 class="value-open-item__title">Verified Material Specifications</h3>
+            <p class="value-open-item__text">
+              Substandard cables, weak cement, and counterfeit fittings cause long-term failures. We supply and install only tested, contractor-grade materials.
+            </p>
+          </li>
+
+          <li class="value-open-item reveal">
+            <span class="value-open-item__num">03</span>
+            <h3 class="value-open-item__title">Clear Scope &amp; Honest Timelines</h3>
+            <p class="value-open-item__text">
+              Every engagement starts with a written scope of works, itemized bill of quantities, and realistic milestone schedule—no hidden variations.
+            </p>
+          </li>
+
+          <li class="value-open-item reveal">
+            <span class="value-open-item__num">04</span>
+            <h3 class="value-open-item__title">End-to-End Accountability</h3>
+            <p class="value-open-item__text">
+              Because our HSE, MEP, hardware, and construction teams operate under one roof, we own the outcome from initial site survey to final commissioning.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How We Work — 4-Column Horizontal Process Row -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How we deliver</h2>
+          <p class="section-lead">
+            A structured four-stage workflow designed to keep technical scope, safety, and budget aligned.
+          </p>
+        </div>
+
+        <div class="timeline-grid">
+          <div class="timeline-step reveal">
+            <span class="timeline-step__num">01 · Consultation &amp; Survey</span>
+            <h3 class="timeline-step__title">Site Assessment</h3>
+            <p class="timeline-step__text">
+              We review drawings, inspect site conditions in Dar es Salaam or upcountry, and verify regulatory and utility requirements.
+            </p>
+          </div>
+
+          <div class="timeline-step reveal">
+            <span class="timeline-step__num">02 · Specification &amp; Quote</span>
+            <h3 class="timeline-step__title">Itemized Proposal</h3>
+            <p class="timeline-step__text">
+              You receive a clear technical scope, material specification sheet, and transparent quotation with delivery milestones.
+            </p>
+          </div>
+
+          <div class="timeline-step reveal">
+            <span class="timeline-step__num">03 · Supervised Execution</span>
+            <h3 class="timeline-step__title">Safe Implementation</h3>
+            <p class="timeline-step__text">
+              Our engineers, technicians, and supply logistics execute the work under active HSE supervision and quality checkpoints.
+            </p>
+          </div>
+
+          <div class="timeline-step reveal">
+            <span class="timeline-step__num">04 · Testing &amp; Handover</span>
+            <h3 class="timeline-step__title">Commissioning</h3>
+            <p class="timeline-step__text">
+              We perform load testing, safety verification, and formal walkthroughs before signing off and handing over documentation.
+            </p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- WhatsApp Floating Button -->
-    <a
-      href="https://wa.me/255123456789?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20DukeOps"
-      class="whatsapp-float"
-      id="whatsapp-float-btn"
-      target="_blank"
-      rel="noopener"
-      aria-label="Chat on WhatsApp"
-    >
-      <i class="bi bi-whatsapp"></i>
-    </a>
+    <!-- Calm Dark CTA Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-banner__inner">
+          <div>
+            <h2 class="cta-banner__title">Work with an accountable technical partner.</h2>
+            <p class="cta-banner__text">
+              Share your project scope or material schedule with our Dar es Salaam team for a prompt response.
+            </p>
+          </div>
+          <div class="cta-banner__actions">
+            <a href="contact.html" class="btn btn-gold">Contact Our Team</a>
+            <a href="services.html" class="btn btn-outline-light">Explore Capabilities</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <!-- Simplified 3-Column Architectural Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-signoff">
+        <p class="footer-signoff__title">Let’s build something that lasts.</p>
+        <a href="contact.html" class="footer-signoff__link">
+          Start a Conversation <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/images/logo.jpg" alt="DukeOps Logo" width="34" height="34" />
+            <span class="footer-brand__name">DukeOps</span>
+          </div>
+          <p class="footer-desc">
+            Multidisciplinary engineering, construction works, HSE consultancy, and contractor-grade hardware supply across Tanzania.
+          </p>
+          <p class="footer-meta">
+            Dar es Salaam, Tanzania<br />
+            Mon–Fri: 8:00 AM – 6:00 PM · Sat: 9:00 AM – 4:00 PM
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Divisions &amp; Pages</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#hse">HSE Consultancy &amp; Audits</a></li>
+            <li><a href="services.html#utility">Electrical &amp; Utility Engineering</a></li>
+            <li><a href="hardware.html">Hardware Supplies Catalog</a></li>
+            <li><a href="services.html#construction">Residential &amp; Commercial Construction</a></li>
+            <li><a href="about.html">About DukeOps</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Direct Desk</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="bi bi-telephone" aria-hidden="true"></i>
+              <a href="tel:+255699669959">+255 699 669 959</a>
+            </li>
+            <li>
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              <a href="https://wa.me/255699669959?text=Hello%20DukeOps,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener">WhatsApp Engineering &amp; Supply Desk</a>
+            </li>
+            <li>
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <a href="mailto:info@dukeops.co.tz">info@dukeops.co.tz</a>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span>Dar es Salaam, Tanzania</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-current-year>2026</span> DukeOps Tanzania. All rights reserved.</p>
+        <div class="footer-bottom__links">
+          <a href="about.html">Company Profile</a>
+          <a href="services.html">Capabilities</a>
+          <a href="hardware.html">Hardware Catalog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-Triggered Quiet WhatsApp Floating Button -->
+  <a
+    href="https://wa.me/255699669959?text=Hello%20DukeOps,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+    id="whatsapp-float-btn"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with DukeOps on WhatsApp"
+    title="Chat with DukeOps on WhatsApp"
+  >
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>
